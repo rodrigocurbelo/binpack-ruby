@@ -4,9 +4,9 @@ class BinPack
 
     rects.each do |rect|
       item = if rotate
-        Binpack::Item
+        BinPacking::Item
       else
-        Binpack::UnrotatableItem
+        BinPacking::UnrotatableItem
       end
 
       items << item.new(
@@ -16,7 +16,7 @@ class BinPack
       )
     end
 
-    bins = Binpack::Bin.pack(items, [], Binpack::Bin.new(
+    bins = BinPacking::Bin.pack(items, [], BinPacking::Bin.new(
       bin[:width], bin[:height], 0
     ))
 
