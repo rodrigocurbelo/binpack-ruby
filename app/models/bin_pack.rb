@@ -11,13 +11,13 @@ class BinPack
 
       items << item.new(
         "#{rect[:width]}x#{rect[:height]}",
-        rect[:width] + 3,
-        rect[:height] + 3
+        rect[:height],
+        rect[:width]
       )
     end
 
     bins = BinPacking::Bin.pack(items, [], BinPacking::Bin.new(
-      bin[:width], bin[:height], 0
+      bin[:height], bin[:width], 0
     ))
 
     bins.map do |bin|
