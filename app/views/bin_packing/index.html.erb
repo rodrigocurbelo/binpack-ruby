@@ -1,28 +1,27 @@
 <%= hidden_field_tag 'bins', @bins.to_json %>
 
-<h1>Nesting mágico en Ruby</h1>
+<h1>Bin packing problem</h1>
 
 <p>
-  Ingresa una pieza por línea, largo y ancho de la pieza
-  separada por coma.
+  Insert only one piece per line, height and width separated by a comma. (height, width)
 </p>
 
 <%= form_tag("/pack", method: "get") do %>
-  <%= label_tag(:bin_width, "Ancho placa") %>
+  <%= label_tag(:bin_width, "Bin height") %>
   <%= number_field_tag(:bin_width, @bin_width, step: 0.01) %>
 
-  <%= label_tag(:bin_height, "Largo placa") %>
+  <%= label_tag(:bin_height, "Bin width") %>
   <%= number_field_tag(:bin_height, @bin_height, step: 0.01) %>
 
-  <%= check_box_tag('rotate', 'yes', @rotate) %> Rotar
+  <%= check_box_tag('rotate', 'yes', @rotate) %> Rotate
 
   <div>
     <textarea name="measures" type="text"><%= @measures %></textarea>
   </div>
 
-  <button>Calcular</button>
+  <button>Calculate</button>
 
-  <h1>Resultado</h1>
+  <h1>Result</h1>
   <div id="max-heights"></div>
 
   <div id="result">

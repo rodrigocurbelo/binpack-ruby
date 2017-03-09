@@ -56,7 +56,7 @@ $(document).ready(function() {
         if (items[y].rotated) {
           var rotatedP = document.createElement('p');
           rotatedP.appendChild(
-            document.createTextNode('Rotado')
+            document.createTextNode('Rotated')
           );
 
           var classAttr = document.createAttribute('class');
@@ -80,7 +80,7 @@ $(document).ready(function() {
 
       var maxHeightH2 = document.createElement('h2');
       document.getElementById('max-heights').appendChild(maxHeightH2);
-      maxHeightH2.innerHTML += 'Alto max ' + (x + 1) + '° placa: ' + largerEnd;
+      maxHeightH2.innerHTML += 'Max height bin number ' + (x + 1) + ': ' + largerEnd;
     }
   }
 
