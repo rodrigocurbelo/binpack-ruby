@@ -1,7 +1,7 @@
 # Bin packing problem interface
-Once upon a time, in a faraway land, lived a young programmer who had to deal with a big problem, he had to make a tech solution for a furniture store which needed to know how much material they had to use for build each piece of furniture based on a custom size that each customer could ask for. Some of these pieces could be rotated while others could not.
+Once upon a time, in a faraway land, lived a young programmer who had to deal with a big problem, he had to make a tech solution for a furniture store which needed to know how much material they had to use to build each piece of furniture based on a custom size that each customer could ask for. Some of these pieces could be rotated while others could not.
 
-So this young programmer started creating a math solution to solve this out, but then he figured out that at that moment he sucked in math, at least he sucked in math enough to don't be able to do that on his own.
+So this young programmer started creating a math solution to solve this out, but then he figured out that at that moment he sucked at math, at least he sucked at math enough to don't be able to do that on his own.
 
 Well, if you haven't figured out I'm talking about myself here yet, I'm going to give you a clue: I'm talking about myself here.
 
